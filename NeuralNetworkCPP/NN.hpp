@@ -25,18 +25,7 @@ public:
     NeuralNetwork(size_t, size_t, size_t, float);
     void trainNetwork(Matrix<double>& inputData, Matrix<double>& targets);
     Matrix<double> queryNetwork(Matrix<double>&);
-};
-
-/*
-class neuralNetworkLayer : public NeuralNetwork {
-private:
-    size_t numberOfHiddenLayers;
-public:
-    neuralNetworkLayer() = default;
-    neuralNetworkLayer(size_t numOfHiddden);
-    
-};
- */ 
+}
 
 
 Matrix<double> sigmoidFunction(Matrix<double>&);
